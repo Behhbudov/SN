@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Social Network | Friends</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <style>
+            span.badge { min-width: 0; }
+            #menu li:hover { background: rgba(142, 204, 241, 0.2); }
+            #menu a { white-space: nowrap; }
+            .small { font-size: 1.2rem! important; padding: 0! important; }
+            .collection { border: 0; } 
+            .collection-item { margin: 1rem 0!important; border: 1px solid #e0e0e0; }
+            @media only screen and (min-width: 768px) {
+                .mainrow { padding: 0 50px; }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="blue darken-4">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo left">SN</a>
+                        <div class="right">
+                            <img src="img/av_64.png" class="left responsive-img" alt="Avatar">
+                            <span class="">Luella Hubbart</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row mainrow">
+                    <div class="col m3 l2">
+                        <ul id="menu">
+                            <li>
+                                <a href="profile.htm">
+                                    <i class="material-icons">assignment_ind</i>My Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news.htm">
+                                    <i class="material-icons">chrome_reader_mode</i>News
+                                </a>
+                            </li>
+                            <li>
+                                <a href="messages.htm">
+                                    <i class="material-icons">mail</i>Messages
+                                    <span class="new badge blue darken-4" data-badge-caption="">4</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="friends.htm">
+                                    <i class="material-icons">face</i>Friends
+                                </a>
+                            </li>
+                            <li>
+                                <a href="events.htm">
+                                    <i class="material-icons">event_available</i>Events
+                                </a>
+                            </li>
+                            <li>
+                                <a href="media.htm">
+                                    <i class="material-icons">image</i>Media
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col m9 l10">
+                        <div class="row">
+                            <div class="col m6"><h4>FRIENDS</h4></div>
+                            <div class="col m6 right-align">
+                                <div class="input-field">
+                                    <input id="last_name" type="text" class="validate col s10">
+                                    <label for="last_name">Search</label>
+                                    <span class="col s2"><a class="btn-floating blue darken-4"><i class="small material-icons">search</i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="collection">
+                            <li class="collection-item avatar z-depth-2">
+                                <div class="row">
+                                    <div class="col s12 m8 l9">
+                                        <img src="img/avatar_1.png" alt="" class="circle">
+                                        <span class="title"><b>Pranav Talley</b></span>
+                                        <p><i class="small material-icons">date_range</i> July 24
+                                        <br /><i class="small material-icons">location_on</i> San Francisco
+                                        </p>
+                                    </div>
+                                    <div class="col s12 m4 l3">
+                                        <p>
+                                            <a href="">Send message</a><br />
+                                            <a href="">Go to profile</a><br />
+                                            <a href="">Remove</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item avatar z-depth-2">
+                                <div class="row">
+                                    <div class="col s12 m8 l9">
+                                        <img src="img/avatar_2.png" alt="" class="circle">
+                                        <span class="title"><b>Serena Perkins</b></span>
+                                        <p><i class="small material-icons">date_range</i> September 4
+                                        <br /><i class="small material-icons">location_on</i> San Francisco
+                                        </p>
+                                    </div>
+                                    <div class="col s12 m4 l3">
+                                        <p>
+                                            <a href="">Send message</a><br />
+                                            <a href="">Go to profile</a><br />
+                                            <a href="">Remove</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item avatar z-depth-2">
+                                <div class="row">
+                                    <div class="col s12 m8 l9">
+                                        <img src="img/avatar_3.png" alt="" class="circle">
+                                        <span class="title"><b>Lyndsey Thomson</b></span>
+                                        <p><i class="small material-icons">date_range</i> Febuary 20
+                                        <br /><i class="small material-icons">location_on</i> Odessa
+                                        </p>
+                                    </div>
+                                    <div class="col s12 m4 l3">
+                                        <p>
+                                            <a href="">Send message</a><br />
+                                            <a href="">Go to profile</a><br />
+                                            <a href="">Remove</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item avatar z-depth-2">
+                                <div class="row">
+                                    <div class="col s12 m8 l9">
+                                        <img src="img/avatar_4.png" alt="" class="circle">
+                                        <span class="title"><b>Nell Choi</b></span>
+                                        <p><i class="small material-icons">date_range</i> June 22
+                                        <br /><i class="small material-icons">location_on</i> Paris
+                                        </p>
+                                    </div>
+                                    <div class="col s12 m4 l3">
+                                        <p>
+                                            <a href="">Send message</a><br />
+                                            <a href="">Go to profile</a><br />
+                                            <a href="">Remove</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </body>
+</html>
